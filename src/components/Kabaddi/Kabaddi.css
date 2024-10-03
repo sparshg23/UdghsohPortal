@@ -1,0 +1,22 @@
+.backgroundImage{
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    z-index: -10;
+  }
+  .backgroundImage img{
+    object-fit: cover;
+    object-position: top;
+    background-repeat: no-repeat;
+    
+  }
+  .backgroundImage::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 0;
+  }

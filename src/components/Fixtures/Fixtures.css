@@ -1,0 +1,77 @@
+.backgroundImage{
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    z-index: -10;
+  }
+  .backgroundImage img{
+    object-fit: cover;
+    object-position: top;
+    background-repeat: no-repeat;
+    
+  }
+  .backgroundImage::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 0;
+  }
+  #image{
+    
+    width: 18vw;
+    height: 35vh;
+    border: black solid 2px;
+    border-radius: 12px;
+    /* box-shadow: 5px 10px #888888;; */
+  }
+
+  .card-body{
+    color: rgb(221, 175, 38);
+    text-shadow: #aaa;
+    font-size: 30px;
+
+  }
+  #fixture{
+    font-size: 3rem;
+    color: rgb(221, 175, 38);
+    /* box-shadow:12px 10px  rgb(221, 175, 38); */
+    text-shadow: 1px 1px rgb(221, 175, 38);
+    text-align: center;
+
+  }
+  .sports{
+    width:20vw;
+
+
+  }
+  .sports:hover{
+    transform: scale(1.2);
+  }
+  .containerr{
+    margin-top: 20px;
+  }
+  
+
+  @media (max-width: 450px) {
+    .containerr{
+      flex-direction: column;
+    }
+
+    .sports{
+      width: 100vw;
+    }
+    #image{
+      width: 70vw;
+      margin: auto;
+      height: 33vh;
+    }
+    .card-body{
+      font-size: 30px;
+    }
+
+
+}
